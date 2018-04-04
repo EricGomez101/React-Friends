@@ -7,7 +7,7 @@ export const PeopleList = props => {
         {props.peopleProp.map((p) => (
           <div className={props.Container}>
             <h1 className={props.name}>name: {p.first_name} {" "} {p.last_name}</h1>
-            <h3 className={props.email}>email: {p.email}</h3>
+            <h3> email: <span className={props.email}>{p.email}</span></h3>
           </div>
         ))}
       </div>
